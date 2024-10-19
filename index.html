@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car game</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <div id="score">Score:0</div>
+    <button id="start">START</button>
+
+
+
+    <div>
+        <div id="enemycar1"><img id="ecarimg1" class="ecarimg" src="car1.jpeg"alt=""></div>
+        <div id="enemycar2"><img id="ecarimg1" class="ecarimg" src="car1.jpeg"alt=""></div>
+        <div id="enemycar3"><img id="ecarimg1" class="ecarimg" src="car1.jpeg"alt="" ></div>
+        <div id="enemycar4"><img id="ecarimg1" class="ecarimg" src="car1.jpeg"alt=""></div>
+    </div>
+    <div id="mycar"><img id="mycarimg" class="mycarimg" src="car2.jpeg"alt=""></div>
+    <div id="road"><img id="road" class="roadimg" src="road2.jpeg"alt="" ></div>
+
+<script>
+
+let t=50
+let l=0
+
+window.addEventListener("keydown",function(x){
+if(x.keyCode==87){
+    t=t-3
+    //alert("w")
+}
+if(x.keyCode==65){
+    l=l-1
+    //alert("a")
+}
+if(x.keyCode==83){
+    t=t+3
+    //alert("s")
+}
+if(x.keyCode==68){
+    l=l+1
+    //alert("d")
+}
+document.getElementById("mycar").style.top=`${t}vh`
+document.getElementById("mycar").style.left=`${l}vw`
+})
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

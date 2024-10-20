@@ -44,7 +44,7 @@ setInterval(()=>{
 },5000)
 setInterval(()=>{
  //num=Math.floor(Math.random()*(max-min+1)+min) //to get random speeds and position of car
- num=Math.floor(Math.random()*(-200-00+1)+200)
+ num=Math.floor(Math.random()*(-200+1)+200)
  document.getElementById("enemycar4").style.left=`${num}px`
 },4000)
 
@@ -84,7 +84,11 @@ if(x.keyCode==68){
 document.getElementById("mycar").style.top=`${t}vh`
 document.getElementById("mycar").style.left=`${l}vw`
 })
-
+n=0
+setInterval(()=>{
+document.getElementById("score").innerText=`Score : ${n}`
+n=n+1
+},100)
 
 
 

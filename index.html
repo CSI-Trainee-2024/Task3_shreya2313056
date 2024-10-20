@@ -23,6 +23,44 @@
 
 <script>
 
+document.getElementById("start").addEventListener("click",function(){
+    document.getElementById("start").style.display='none'
+    document.getElementById("road").style.animation='roadanimation 20s linear infinite'
+
+setInterval(()=>{
+ //num=Math.floor(Math.random()*(max-min+1)+min) //to get random speeds and position of car
+ num=Math.floor(Math.random()*(400-200+1)+200)
+ document.getElementById("enemycar1").style.left=`${num}px`
+},3000)
+setInterval(()=>{
+ //num=Math.floor(Math.random()*(max-min+1)+min) //to get random speeds and position of car
+ num=Math.floor(Math.random()*(200-(-400)+1)+200)
+ document.getElementById("enemycar2").style.left=`${num}px`
+},6000)
+setInterval(()=>{
+ //num=Math.floor(Math.random()*(max-min+1)+min) //to get random speeds and position of car
+ num=Math.floor(Math.random()*(-400-(-200)+1)+200)
+ document.getElementById("enemycar3").style.left=`${num}px`
+},5000)
+setInterval(()=>{
+ //num=Math.floor(Math.random()*(max-min+1)+min) //to get random speeds and position of car
+ num=Math.floor(Math.random()*(-200-00+1)+200)
+ document.getElementById("enemycar4").style.left=`${num}px`
+},4000)
+
+
+
+
+ document.getElementById("enemycar1").style.animation='ecar1 2s linear infinite'
+ document.getElementById("enemycar2").style.animation='ecar2 4s linear infinite'
+ document.getElementById("enemycar3").style.animation='ecar3 6s linear infinite'
+ document.getElementById("enemycar4").style.animation='ecar4 8s linear infinite'
+})
+
+
+
+
+
 let t=50
 let l=0
 

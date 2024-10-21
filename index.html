@@ -30,7 +30,7 @@ document.getElementById("road").style.animation = 'roadanimation 20s linear infi
 
 
 setInterval(() => {
-    num = Math.floor(Math.random() * (310 - 230 + 1) + 230)
+    num = Math.floor(Math.random() * (350 - 230 + 1) + 230)
     document.getElementById("enemycar1").style.left = `${num}px`
 
 }, 3000)
@@ -117,26 +117,43 @@ setInterval(() => {
     var mycar_bottom = document.getElementById("mycarimg").getBoundingClientRect().bottom;
 
 
-    if (mycar_left < 450 || mycar_right > 1080 || mycar_top < 20 || mycar_bottom > 690)
+    if (mycar_left < 450 || mycar_right > 1120 || mycar_top < 20 || mycar_bottom > 690)
      {
-        
+        setTimeout(() => {
+                    alert(`GAME OVER!`)
+              
+                location.reload()
+                 },0)
      }
     if (((ecar1_left < mycar_left && mycar_left < ecar1_right) || (ecar1_left < mycar_right && mycar_right < ecar1_right)) && ((ecar1_top < mycar_top && mycar_top < ecar1_bottom) || (ecar1_top < mycar_bottom && mycar_bottom < ecar1_bottom))) {
-        alert(`GAME OVER!`)
+        setTimeout(() => {
+                    alert(`GAME OVER!`)
+              location.reload()
+            },0)
     }
        
     if (((ecar2_left < mycar_left && mycar_left < ecar2_right) || (ecar2_left < mycar_right && mycar_right < ecar2_right)) && ((ecar2_top < mycar_top && mycar_top < ecar2_bottom) || (ecar2_top < mycar_bottom && mycar_bottom < ecar2_bottom))) {
 
-        alert(`GAME OVER!`)
+        setTimeout(() => {
+                    alert(`GAME OVER!`)
+              location.reload()
+
+            },0)
     }
     if (((ecar3_left < mycar_left && mycar_left < ecar3_right) || (ecar3_left < mycar_right && mycar_right < ecar3_right)) && ((ecar3_top < mycar_top && mycar_top < ecar3_bottom) || (ecar3_top < mycar_bottom && mycar_bottom < ecar3_bottom))) {
 
-        alert(`GAME OVER!`)
+        setTimeout(() => {
+                    alert(`GAME OVER!`)
+               location.reload()
+            },0)
     
     }
     if (((ecar4_left < mycar_left && mycar_left < ecar4_right) || (ecar4_left < mycar_right && mycar_right < ecar4_right)) && ((ecar4_top < mycar_top && mycar_top < ecar4_bottom) || (ecar4_top < mycar_bottom && mycar_bottom < ecar4_bottom))) {
 
-        alert(`GAME OVER!`)
+        setTimeout(() => {
+                    alert(`GAME OVER!`)
+                location.reload()
+            },0)
     }
 
 }, 100)

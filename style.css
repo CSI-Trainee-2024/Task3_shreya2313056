@@ -48,7 +48,7 @@ body{
     width:100px;
     height:100px;
     left:310px;
-    z-index:1001;
+    z-index:101;
     animation:ecar1 infinite linear 1s;
     
 
@@ -95,6 +95,7 @@ body{
     height: 100px;
     position: relative;
     top:15vh;
+    z-index: 101;
     
 }
 .ecarimg {

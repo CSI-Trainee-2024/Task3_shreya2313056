@@ -11,7 +11,7 @@ body{
 }
 #road{
     background: url(road3.png) repeat-y;
-    height: 200vh;
+    height: 1200vh;
     width: 50vw;
     position: relative;
     top:-80vh;

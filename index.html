@@ -26,7 +26,7 @@
 document.getElementById("start").addEventListener("click", function () {
 
 document.getElementById("start").style.display = 'none'
-document.getElementById("road").style.animation = 'roadanimation 10s linear infinite'
+document.getElementById("road").style.animation = 'roadanimation 20s linear infinite'
 
 
 setInterval(() => {
@@ -83,7 +83,7 @@ window.addEventListener("keydown", function (x) {
     document.getElementById("mycar").style.left = `${l}vw`
 })
 
-let n = 0
+var n = 0
 setInterval(() => {
 
     document.getElementById("score").innerText = `Score : ${n}`
